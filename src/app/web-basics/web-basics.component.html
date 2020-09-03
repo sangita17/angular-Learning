@@ -1,0 +1,60 @@
+
+
+<div class="header">
+Learning Tutorial
+</div>
+<div class="navbar">
+  <a href="#" class="active">Home</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#" >Link</a>
+</div>
+<div class="row">
+  <div class="column left">
+    <div class="container">
+    <div class="box">Main Menu </div>
+    <ul>
+       <a href="#">
+       <li *ngFor="let item of menuItems" >
+        {{item.item | uppercase}}<!-->List of items are fetched form web-call.service/ts with use of pipe  -->
+    </li></a>
+  </ul>
+       <div class="box">Block</div>
+    <p>“This above all: to thine own self be true,
+	And it must follow, as the night the day,
+	Thou canst not then be false to any man.”
+	― William Shakespeare, Hamlet</p>
+   
+  </div></div>
+  <div class="column right" >
+   <div class="container">
+    
+
+  <div class="col">
+    <div class="container">
+    <h2>{{webgallery}}</h2>
+    <p>Food is the basic human need to stay alive. Moreover, it is the need of every living organism. Therefore it is important that we should not waste food. Our world consists of different types of cultures. These cultures have varieties of dishes of food in them.</p>
+     </div></div>
+  <div class="col" >
+   <div class="container">
+   
+    <div class="row">
+  <div class="colLast">
+    <div class="container">
+    <h2>Subscription</h2>
+    <p>Some text..</p><br/><br/><br/>
+    <div class="box">Read More</div>
+  </div></div>
+  <div class="colLast"  >
+   <div class="container">
+    <h2>Other Services</h2>
+    <p>Some text..</p><br/><br/><br/>
+    <div class="box">Read More</div>
+   </div></div>
+   </div></div></div>
+
+</div></div></div>
+<div class="footer">
+Learning Tutorial--
+{{bithday | date:'fullDate' }}
+</div>
