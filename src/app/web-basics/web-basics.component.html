@@ -1,5 +1,3 @@
-
-
 <div class="header">
 Learning Tutorial
 </div>
@@ -18,7 +16,7 @@ Learning Tutorial
        <li *ngFor="let item of menuItems" >
         {{item.item | uppercase}}<!-->List of items are fetched form web-call.service/ts with use of pipe  -->
     </li></a>
-  </ul>
+  </ul><br/><br/>
        <div class="box">Block</div>
     <p>“This above all: to thine own self be true,
 	And it must follow, as the night the day,
@@ -26,14 +24,31 @@ Learning Tutorial
 	― William Shakespeare, Hamlet</p>
    
   </div></div>
-  <div class="column right" >
+  <div class="column right" [(ngModel)]="order" >
    <div class="container">
     
 
   <div class="col">
     <div class="container">
     <h2>{{webgallery}}</h2>
-    <p>Food is the basic human need to stay alive. Moreover, it is the need of every living organism. Therefore it is important that we should not waste food. Our world consists of different types of cultures. These cultures have varieties of dishes of food in them.</p>
+    <select class="dropdown" >
+    <option value="name">Name</option>
+    <option value="address">Address</option>
+    <option value="price">Price</option>
+  </select>
+    <table>
+      <thead>
+      <tr>
+        <td>Restuant Name</td>
+        <td>Address</td>
+        <td>Price</td>
+      </tr></thead>
+      <tr *ngFor="let x of restaurantLists ">
+        <td>{{x.name}}</td>
+        <td>{{x.address}}</td>
+        <td>{{x.price}}</td>
+      </tr>
+    </table>
      </div></div>
   <div class="col" >
    <div class="container">
