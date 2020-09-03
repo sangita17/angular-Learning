@@ -45,7 +45,7 @@
   float: left;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  height: 400px; /* Should be removed. Only for demonstration */
+  height: 480px; /* Should be removed. Only for demonstration */
 }
 .col {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -114,4 +114,9 @@ color: black;
 }
 th, td {
   border: 1px solid black;
+}
+img{
+  float:right;
+  height:100px;
+  width:25%;
 }
