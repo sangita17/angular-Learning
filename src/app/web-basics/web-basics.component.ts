@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {WebCallComponent} from '../web-call/web-call.component'
 import {WebCallService} from '../web-call/web-call.service'
+import {customOrderByPipe} from '../web-basics/customPipe'
 @Component({
   selector: 'app-web-basics',
   templateUrl: './web-basics.component.html',
