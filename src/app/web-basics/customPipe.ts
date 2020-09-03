@@ -2,7 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({ name: 'orderBy' })
 export class customOrderByPipe implements PipeTransform {
-  transform(items: any[], field: string, reverse: boolean = false): any[] {
+  transform(items: any[], field: string): any[] {
     if (!items) return [];
 
     if (field) items.sort((a, b) => a[field] > b[field] ? 1 : -1);

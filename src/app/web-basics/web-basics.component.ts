@@ -21,13 +21,13 @@ restaurantLists = [
   ];
 
   constructor(private webService : WebCallService) { }
-
+//,private orderPipe: customOrderByPipe
   ngOnInit() {
-    this.webgallery = new WebCallComponent().gallery;
-    this.webService.getMenuItems().subscribe(menu =>{
-      this.menuItems=menu
-    });
-    // console.log(this.orderPipe.transform(this.restaurantLists, 'digit'));
+    // this.webgallery = new WebCallComponent().gallery;
+    // this.webService.getMenuItems().subscribe(menu =>{
+    //   this.menuItems=menu
+    // });
+     //console.log(this.orderPipe.transform(this.restaurantLists, 'digit'));
   }
 
 }
