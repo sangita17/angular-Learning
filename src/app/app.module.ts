@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { WebBasicsComponent } from './web-basics/web-basics.component';
 import { WebCallComponent } from './web-call/web-call.component';
+import { MyOrderByPipe } from './shared/sort.pipe';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent,WebBasicsComponent,WebCallComponent ],
-  bootstrap:    [ AppComponent ]
+  declarations: [ AppComponent, HelloComponent,WebBasicsComponent,WebCallComponent,MyOrderByPipe ],
+  bootstrap:    [ AppComponent ],
+  providers: [MyOrderByPipe]
 })
 export class AppModule { }
